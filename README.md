@@ -1,70 +1,65 @@
-<h1>Project Description:</h1>
-<p>Create a simple Task Manager where users can add, view, edit, and delete tasks. The application should have user authentication and authorization to ensure that only authorized users can manage tasks.</p>
+# 🚀 Task Manager Application  
 
-<h1>Features:</h1>
-<ol>
-  <li><h5>User Registration and Authentication:</h5>
-    <ul>
-      <li>Users should be able to register with a username and password.</li>
-      <li>Implement user login/logout functionality.</li>
-    </ul>
-  </li>
-  <li><h5>Task Management:</h5>
-    <ul>
-      <li>Authenticated users can create tasks with a title, description, due date, and status.</li>
-      <li>Tasks should be displayed in a list, and users should be able to view, edit, and delete tasks.</li>
-    </ul>
-  </li>
-  <li><h5>Task Status:</h5>
-    <ul>
-      <li>Each task can have a status (e.g., To Do, In Progress, Done).</li>
-      <li>Implement the ability to change the status of a task.</li>
-    </ul>
-  </li>
-  <li><h5>User Roles:</h5>
-    <ul>
-      <li>Have different user roles such as regular user and administrator.</li>
-      <li>Only administrators should be able to delete tasks.</li>
-    </ul>
-  </li>
-</ol>
-    
-<h1>Basic Project Document Outline:</h1>
-<ol>
-  <li><h5>Introduction:</h5>
-    <ul>
-      <li>Brief description of the project and its purpose.</li>
-      <li>Mention the technologies used (ASP.NET MVC, C#, etc.).</li>
-    </ul>
-  </li>
-  <li><h5>Project Scope:</h5>
-    <ul><li>Clearly define what features will be included in the project.</li></ul>
-  </li>
-  <li><h5>User Stories:</h5>
-    <ul><li>Define user stories for different user roles (e.g., guest, registered user, administrator).</li></ul>
-  </li>
-  <li><h5>Database Schema:</h5>
-    <ul><li>Design the database schema for storing user information and tasks.</li></ul>
-  </li>
-  <li><h5>Authentication and Authorization:</h5>
-    <ul><li>Describe how user registration, login, and role-based authorization will be implemented.</li></ul>
-  </li>
-  <li><h5>Task Management:</h5>
-    <ul><li>Explain the structure of tasks, including fields like title, description, due date, and status.</li></ul>
-  </li>
-  <li><h5>User Interface Design:</h5>
-    <ul><li>Sketch or describe how the user interface will look, including the pages for task creation, task listing, and user management.</li></ul>
-  </li>
-  <li><h5>Implementation Plan:</h5>
-    <ul><li>Break down the implementation into smaller tasks and create a timeline.</li></ul>
-  </li>
-  <li><h5>Challenges and Solutions:</h5>
-    <ul><li>Anticipate potential challenges and provide solutions.</li></ul>
-  </li>
-  <li><h5>Testing:</h5>
-    <ul><li>Outline the testing strategy, including unit testing and user acceptance testing.</li></ul>
-  </li>
-  <li><h5>Conclusion:</h5>
-    <ul><li>Summarize the key points of the document.</li></ul>
-  </li>
-</ol>
+## **📌 Overview**
+This is a **Task Manager Web Application** built with **.NET MVC**, **Bootstrap**, **HTML, CSS, JavaScript**, and **SQL Server**.  
+It allows **Admins** to create, edit, and delete tasks, while **Users** can create and edit their own tasks.  
+Each user session is managed securely.  
+
+---
+
+## **🛠 Tech Stack**
+- **Backend:** ASP.NET MVC (C#)
+- **Frontend:** Bootstrap, HTML, CSS, JavaScript  
+- **Database:** SQL Server with Entity Framework Core  
+- **Authentication:** Session-based login  
+- **Version Control:** Git & GitHub  
+
+---
+
+## **✅ Features & Descriptions**
+### **1️⃣ User Authentication (Sign Up & Log In)**
+🔹 Users can **register** and **log in** securely.  
+🔹 Sessions are created for each user after login.  
+🔹 Ensures **only authenticated users** can access the system.  
+🔹 Admins have extra privileges to manage all tasks.  
+
+### **2️⃣ CRUD Operations (Create, Read, Update, Delete)**
+🔹 Users can **create tasks** with a title, description, category, priority, and due date.  
+🔹 Tasks can be **viewed in a list format** for easy management.  
+🔹 Tasks can be **updated** to change details like priority or description.  
+🔹 Users can **delete** tasks when they are no longer needed.  
+
+### **3️⃣ Task Categories & Tags**
+🔹 Users can categorize tasks (e.g., **Work, Personal, Urgent, Shopping**).  
+🔹 Multiple **tags** can be added to help with filtering.  
+
+### **4️⃣ Task Status Management**
+🔹 Users can **mark tasks as Completed or Pending**.  
+🔹 Completed tasks can be easily identified.  
+🔹 Helps in tracking work progress.  
+
+### **5️⃣ Search & Filter Tasks**
+🔹 Users can **search tasks by title**.  
+🔹 Tasks can be **filtered by category** or **status (Pending/Completed)**.  
+🔹 Helps users find tasks quickly.  
+
+### **6️⃣ Bootstrap UI & Responsive Design**
+🔹 Modern and **responsive UI** using Bootstrap.  
+🔹 Works on **desktop, tablet, and mobile** devices.  
+
+### **7️⃣ Admin & User Roles**
+🔹 **Admins** can manage all users' tasks.  
+🔹 **Users** can only manage their own tasks.  
+
+### **8️⃣ Secure Session Management**
+🔹 **User sessions** are created after login to prevent unauthorized access.  
+🔹 Sessions expire after logout or inactivity.  
+
+---
+
+## **📌 GitHub Setup**
+### **1️⃣ Initialize Git in Your Project**
+```sh
+git init
+git add .
+git commit -m "Initial commit - Task Manager Application"
